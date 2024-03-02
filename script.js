@@ -1,3 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  document.body.innerHTML += "DOM load success";
+	  var successMessage = document.createElement('p');
+      successMessage.textContent = "DOM load success";
+      document.body.appendChild(successMessage);
 });
