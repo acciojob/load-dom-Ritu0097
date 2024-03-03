@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-            if (!document.body.hasChildNodes()) {
-                var successMessage = document.createTextNode("DOM load success");
-                document.body.appendChild(successMessage);
-            }
-        });
+function onDOMLoad() {
+        document.body.textContent = "DOM load success";
+      }
+      document.addEventListener("DOMContentLoaded", onDOMLoad);
